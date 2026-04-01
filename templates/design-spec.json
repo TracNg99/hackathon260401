@@ -1,0 +1,71 @@
+{
+  "_comment": "Template filled by Agent 02 (Graphic Designer) each week. One file per service.",
+  "service": "taxation|audit|account",
+  "week_of": "YYYY-MM-DD",
+  "generated_at": "ISO-8601 timestamp",
+  "graphic_file": "assets/graphics/graphic_{service}_{date}.png",
+  "canva_url": "https://www.canva.com/design/{id}/view",
+  "dimensions": {
+    "width": 1200,
+    "height": 630,
+    "format": "PNG"
+  },
+  "colors": {
+    "primary": "#3B82F6",
+    "primary_dark": "#1D4ED8",
+    "background": "#0F172A",
+    "surface": "#1E293B",
+    "text_primary": "#F1F5F9",
+    "text_secondary": "#94A3B8",
+    "accent": "#3B82F6"
+  },
+  "typography": {
+    "headline": {
+      "text": "Replace with Agent 02 generated headline",
+      "font": "Inter",
+      "size": "48px",
+      "weight": "800",
+      "color": "#F1F5F9",
+      "max_chars": 60
+    },
+    "subheadline": {
+      "text": "Replace with Agent 02 generated subheadline",
+      "font": "Inter",
+      "size": "20px",
+      "weight": "400",
+      "color": "#94A3B8",
+      "max_chars": 100
+    },
+    "service_tag": {
+      "text": "TAXATION UPDATE",
+      "font": "Inter",
+      "size": "12px",
+      "weight": "700",
+      "color": "#93C5FD",
+      "position": "top-left"
+    },
+    "cta": {
+      "text": "Read More → edge8.com/taxation",
+      "font": "Inter",
+      "size": "16px",
+      "weight": "600",
+      "color": "#3B82F6"
+    }
+  },
+  "layout": {
+    "logo_position": "top-right",
+    "service_badge_position": "top-left",
+    "headline_alignment": "center",
+    "background_style": "dark_gradient"
+  },
+  "news_headline": "Original news headline from Agent 01",
+  "news_summary": "2-3 sentence summary from Agent 01 weekly brief",
+  "source_url": "https://source.url/article",
+  "source_name": "SSM Malaysia | National Audit Dept MY | ACCA Malaysia",
+  "cta_text": "Subscribe for Weekly Updates",
+  "cta_url": "https://edge8.com/subscribe",
+  "landing_page_url": "https://edge8.com/landing-pages/{service}-landing.html",
+  "approval_status": "pending|approved|rejected",
+  "approved_by": "tommy.dan@edge8.com",
+  "approved_at": null
+}

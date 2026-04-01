@@ -1,0 +1,34 @@
+{
+  "_comment": "Subscriber registry — updated by Agent 04 on new subscriptions. Agent 05 reads this for Friday follow-ups.",
+  "last_updated": "2025-04-01T10:00:00+08:00",
+  "total": 3,
+  "subscribers": [
+    {
+      "id": "sub_001",
+      "name": "Ahmad Razif",
+      "email": "ahmad.razif@example.com",
+      "services": ["taxation", "audit"],
+      "subscribed_at": "2025-03-15T09:12:00+08:00",
+      "confirmed": true,
+      "active": true
+    },
+    {
+      "id": "sub_002",
+      "name": "Siti Norzahra",
+      "email": "siti.norzahra@example.com",
+      "services": ["account", "taxation"],
+      "subscribed_at": "2025-03-20T14:33:00+08:00",
+      "confirmed": true,
+      "active": true
+    },
+    {
+      "id": "sub_003",
+      "name": "Lee Kian Huat",
+      "email": "lee.kianhuat@example.com",
+      "services": ["audit", "account"],
+      "subscribed_at": "2025-03-28T11:05:00+08:00",
+      "confirmed": true,
+      "active": true
+    }
+  ]
+}

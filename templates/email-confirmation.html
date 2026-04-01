@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Edge8 Weekly — Subscription Confirmed</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: #F1F5F9; font-family: 'Inter', Arial, sans-serif; color: #1E293B; }
+    .wrapper { max-width: 600px; margin: 32px auto; background: #0F172A; border-radius: 16px; overflow: hidden; }
+    .header { background: linear-gradient(135deg, #0F172A, #1E3A8A); padding: 40px 40px 32px; text-align: center; border-bottom: 1px solid #1E293B; }
+    .logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+    .logo-box { width: 40px; height: 40px; background: #1D4ED8; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 14px; }
+    .logo-text { color: white; font-weight: 800; font-size: 20px; }
+    .header h1 { color: #F1F5F9; font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+    .header p { color: #94A3B8; font-size: 15px; line-height: 1.5; }
+    .body { padding: 36px 40px; }
+    .greeting { color: #F1F5F9; font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+    .message { color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 28px; }
+    .service-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+    .badge { padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; border: 1px solid; }
+    .badge-tax { background: #1E3A8A; color: #93C5FD; border-color: #1D4ED8; }
+    .badge-audit { background: #3B0764; color: #C4B5FD; border-color: #6D28D9; }
+    .badge-account { background: #064E3B; color: #6EE7B7; border-color: #047857; }
+    .what-to-expect { background: #1E293B; border-radius: 12px; padding: 24px; margin-bottom: 28px; }
+    .what-to-expect h3 { color: #F1F5F9; font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+    .timeline-item { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+    .timeline-dot { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .dot-tue { background: #1E3A8A; }
+    .dot-wed { background: #451A03; }
+    .dot-fri { background: #450A0A; }
+    .timeline-content p { color: #F1F5F9; font-size: 14px; font-weight: 600; }
+    .timeline-content span { color: #64748B; font-size: 13px; }
+    .cta-section { text-align: center; background: linear-gradient(135deg, #1D4ED8, #6D28D9); border-radius: 12px; padding: 28px 24px; margin-bottom: 28px; }
+    .cta-section p { color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 16px; }
+    .cta-btn { display: inline-block; background: white; color: #1D4ED8; padding: 12px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; text-decoration: none; }
+    .divider { height: 1px; background: #1E293B; margin: 24px 0; }
+    .footer { padding: 24px 40px; text-align: center; border-top: 1px solid #1E293B; }
+    .footer p { color: #475569; font-size: 12px; line-height: 1.6; }
+    .footer a { color: #3B82F6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <div class="logo-box">E8</div>
+        <span class="logo-text">Edge8</span>
+      </div>
+      <h1>You're Subscribed! 🎉</h1>
+      <p>Welcome to Edge8's automated weekly digest on Malaysian compliance</p>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <p class="greeting">Hi {{SUBSCRIBER_NAME}},</p>
+      <p class="message">
+        You're now subscribed to Edge8's weekly marketing digest. Every week, our AI-powered system 
+        researches the latest updates from Malaysian regulatory authorities and delivers them straight 
+        to your inbox — every Wednesday at 10am MYT.
+      </p>
+
+      <!-- Service badges -->
+      <p style="color:#64748B; font-size:13px; margin-bottom:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">YOUR SUBSCRIBED SERVICES</p>
+      <div class="service-badges">
+        <!-- Agent 04 replaces these based on subscriber preferences -->
+        {{#if services.taxation}}
+        <span class="badge badge-tax">📊 Taxation</span>
+        {{/if}}
+        {{#if services.audit}}
+        <span class="badge badge-audit">🔍 Audit</span>
+        {{/if}}
+        {{#if services.account}}
+        <span class="badge badge-account">💰 Account</span>
+        {{/if}}
+      </div>
+
+      <!-- What to expect -->
+      <div class="what-to-expect">
+        <h3>What to Expect Each Week</h3>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-wed">📅</div>
+          <div class="timeline-content">
+            <p>Wednesday 10am — Weekly Digest Published</p>
+            <span>Landing pages for Tax, Audit &amp; Account go live with this week's top stories</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-fri">📧</div>
+          <div class="timeline-content">
+            <p>Friday 10am — Follow-up &amp; 1-2-1 Invitation</p>
+            <span>Personalised follow-up with deeper insights and optional advisory session booking</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-section">
+        <p>Your first digest publishes on {{PUBLISH_DATE}}</p>
+        <a href="{{LANDING_URL}}" class="cta-btn">View This Week's Update →</a>
+      </div>
+
+      <div class="divider"></div>
+      <p style="color:#94A3B8; font-size:14px; line-height:1.6;">
+        In the meantime, browse this week's updates:<br/>
+        <a href="{{TAX_URL}}" style="color:#3B82F6;">📊 Taxation Update</a> &nbsp;·&nbsp;
+        <a href="{{AUDIT_URL}}" style="color:#8B5CF6;">🔍 Audit Update</a> &nbsp;·&nbsp;
+        <a href="{{ACCOUNT_URL}}" style="color:#10B981;">💰 Accounting Update</a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        You received this email because you subscribed at edge8.com<br/>
+        <a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a> · 
+        <a href="https://edge8.com/privacy">Privacy Policy</a> · 
+        Edge8, Kuala Lumpur, Malaysia<br/>
+        Questions? <a href="mailto:hello@edge8.com">hello@edge8.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

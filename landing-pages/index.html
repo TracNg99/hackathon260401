@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Edge8 — Weekly insights on Taxation, Audit, and Accounting in Malaysia. Subscribe for automated updates every Wednesday."/>
+  <meta property="og:title" content="Edge8 Weekly Marketing Campaign"/>
+  <meta property="og:description" content="Stay ahead on Malaysian Tax, Audit and Accounting with Edge8's AI-powered weekly insights."/>
+  <meta property="og:image" content="../assets/infographic.svg"/>
+  <title>Edge8 — Automated Marketing Campaign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            slate: { 950: '#020617' },
+            brand: { DEFAULT: '#1D4ED8', light: '#3B82F6', dark: '#1E40AF' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0F172A; }
+    .hero-gradient { background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%); }
+    .card-glow-blue  { box-shadow: 0 0 0 1px rgba(59,130,246,0.3), 0 8px 32px rgba(29,78,216,0.2); }
+    .card-glow-purple{ box-shadow: 0 0 0 1px rgba(139,92,246,0.3), 0 8px 32px rgba(109,40,217,0.2); }
+    .card-glow-green { box-shadow: 0 0 0 1px rgba(16,185,129,0.3), 0 8px 32px rgba(4,120,87,0.2); }
+    .infographic-wrapper { filter: drop-shadow(0 20px 60px rgba(0,0,0,0.6)); }
+    .animated-border { background: linear-gradient(90deg, #1D4ED8, #6D28D9, #047857, #B45309, #B91C1C, #1D4ED8); background-size: 300%; animation: border-flow 6s linear infinite; }
+    @keyframes border-flow { 0%{background-position:0%} 100%{background-position:300%} }
+    .subscribe-btn { background: linear-gradient(135deg, #1D4ED8, #6D28D9); transition: all 0.3s ease; }
+    .subscribe-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(29,78,216,0.4); }
+    .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .service-card:hover { transform: translateY(-6px); }
+    .flow-dot { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .scroll-fade { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .scroll-fade.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-sans text-slate-100 antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-brand flex items-center justify-center text-sm font-black text-white">E8</div>
+        <span class="font-bold text-white text-lg">Edge8</span>
+        <span class="hidden sm:inline text-slate-600 mx-2">|</span>
+        <span class="hidden sm:inline text-slate-400 text-sm">Weekly Insights</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#services" class="text-slate-400 hover:text-white text-sm transition-colors">Services</a>
+        <a href="#workflow" class="text-slate-400 hover:text-white text-sm transition-colors">Workflow</a>
+        <a href="#subscribe" class="px-4 py-2 rounded-lg bg-brand hover:bg-brand-dark text-white text-sm font-semibold transition-colors">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-gradient pt-24 pb-16 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Week badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-slate-400 text-sm mb-8">
+        <span class="w-2 h-2 rounded-full bg-green-400 flow-dot"></span>
+        Weekly campaign active — Published every Wednesday 10am MYT
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6">
+        Stay Ahead.<br/>
+        <span class="text-transparent bg-clip-text" style="background-image:linear-gradient(135deg,#3B82F6,#8B5CF6,#10B981)">Stay Compliant.</span>
+      </h1>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+        Edge8's AI-powered weekly digest on Malaysian <span class="text-blue-400 font-semibold">Taxation</span>, 
+        <span class="text-purple-400 font-semibold">Audit</span>, and 
+        <span class="text-emerald-400 font-semibold">Accounting</span> — researched, designed, and delivered automatically.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <a href="#subscribe" class="subscribe-btn px-8 py-4 rounded-xl text-white font-bold text-lg">
+          Subscribe — Free Weekly Digest
+        </a>
+        <a href="#workflow" class="px-8 py-4 rounded-xl bg-slate-800 border border-slate-700 text-white font-semibold text-lg hover:bg-slate-700 transition-colors">
+          See How It Works ↓
+        </a>
+      </div>
+
+      <!-- INFOGRAPHIC — Central Piece -->
+      <div id="workflow" class="relative">
+        <div class="animated-border p-[2px] rounded-2xl">
+          <div class="bg-slate-950 rounded-2xl p-4 overflow-hidden">
+            <div class="infographic-wrapper w-full">
+              <img src="../assets/infographic.svg" alt="Edge8 5-Agent Automated Marketing Workflow" 
+                   class="w-full h-auto rounded-xl" style="min-height:280px;"/>
+            </div>
+          </div>
+        </div>
+        <!-- Caption -->
+        <p class="mt-4 text-sm text-slate-500 text-center">
+          5-agent AI pipeline running every week: News Research → Graphic Design → Landing Page → Google Calendar → Email Follow-up
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THIS WEEK'S SERVICES -->
+  <section id="services" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 scroll-fade">
+        <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">This Week's Updates</span>
+        <h2 class="text-4xl font-bold text-white mt-2">Latest From Each Service</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- TAXATION -->
+        <a href="tax-landing.html" class="service-card card-glow-blue bg-slate-900 rounded-2xl p-6 block scroll-fade">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-xl" style="background:#1E3A8A">📊</div>
+            <div>
+              <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Taxation</span>
+              <p class="text-xs text-slate-500">Source: SSM Malaysia</p>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 leading-tight" id="tax-headline">
+            Latest SSM Taxation Update — Stay Compliant This Week
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4" id="tax-summary">
+            This week's taxation brief covers the latest Companies Commission of Malaysia updates affecting your business filings and compliance deadlines.
+          </p>
+          <div class="flex items-center gap-2 text-blue-400 text-sm font-semibold">
+            Read full update <span>→</span>
+          </div>
+        </a>
+
+        <!-- AUDIT -->
+        <a href="audit-landing.html" class="service-card card-glow-purple bg-slate-900 rounded-2xl p-6 block scroll-fade">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-xl" style="background:#3B0764">🔍</div>
+            <div>
+              <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Audit</span>
+              <p class="text-xs text-slate-500">Source: National Audit Dept MY</p>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 leading-tight" id="audit-headline">
+            National Audit Department: Key Findings & Compliance Alerts
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4" id="audit-summary">
+            This week's audit brief highlights key findings from the Jabatan Audit Negara and what businesses should action immediately for compliance.
+          </p>
+          <div class="flex items-center gap-2 text-purple-400 text-sm font-semibold">
+            Read full update <span>→</span>
+          </div>
+        </a>
+
+        <!-- ACCOUNT -->
+        <a href="account-landing.html" class="service-card card-glow-green bg-slate-900 rounded-2xl p-6 block scroll-fade">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-xl" style="background:#064E3B">💰</div>
+            <div>
+              <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Account</span>
+              <p class="text-xs text-slate-500">Source: ACCA Malaysia</p>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 leading-tight" id="account-headline">
+            ACCA Malaysia: New Accounting Standards & Practical Updates
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4" id="account-summary">
+            This week's accounting brief from ACCA Malaysia covers new MFRS standards, practitioner updates, and CPD opportunities relevant to your business.
+          </p>
+          <div class="flex items-center gap-2 text-emerald-400 text-sm font-semibold">
+            Read full update <span>→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-20 px-6 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14 scroll-fade">
+        <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">How It Works</span>
+        <h2 class="text-4xl font-bold text-white mt-2">5 AI Agents, One Seamless Pipeline</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- Step 1 -->
+        <div class="scroll-fade bg-slate-900 rounded-2xl p-5 border border-slate-800 relative">
+          <div class="w-10 h-10 rounded-xl bg-blue-900 text-blue-300 flex items-center justify-center text-xl mb-3">📰</div>
+          <div class="text-xs font-bold text-blue-400 mb-1">TUESDAY</div>
+          <h3 class="font-bold text-white mb-2">News Research</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Scrapes SSM, Audit Dept &amp; ACCA Malaysia. Picks top story per service.</p>
+          <div class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 text-slate-600 text-lg">→</div>
+        </div>
+        <!-- Step 2 -->
+        <div class="scroll-fade bg-slate-900 rounded-2xl p-5 border border-slate-800 relative">
+          <div class="w-10 h-10 rounded-xl bg-purple-900 text-purple-300 flex items-center justify-center text-xl mb-3">🎨</div>
+          <div class="text-xs font-bold text-purple-400 mb-1">TUESDAY</div>
+          <h3 class="font-bold text-white mb-2">Graphic Design</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Auto-generates 3 service graphics via Canva. Sends to Tommy for approval.</p>
+          <div class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 text-slate-600 text-lg">→</div>
+        </div>
+        <!-- Step 3 -->
+        <div class="scroll-fade bg-slate-900 rounded-2xl p-5 border border-slate-800 relative">
+          <div class="w-10 h-10 rounded-xl bg-emerald-900 text-emerald-300 flex items-center justify-center text-xl mb-3">💻</div>
+          <div class="text-xs font-bold text-emerald-400 mb-1">TUESDAY</div>
+          <h3 class="font-bold text-white mb-2">Landing Pages</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Builds 3 styled HTML pages with subscribe forms. Approval gate with Tommy.</p>
+          <div class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 text-slate-600 text-lg">→</div>
+        </div>
+        <!-- Step 4 -->
+        <div class="scroll-fade bg-slate-900 rounded-2xl p-5 border border-slate-800 relative">
+          <div class="w-10 h-10 rounded-xl bg-amber-900 text-amber-300 flex items-center justify-center text-xl mb-3">📅</div>
+          <div class="text-xs font-bold text-amber-400 mb-1">WEDNESDAY 10AM</div>
+          <h3 class="font-bold text-white mb-2">Scheduler</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Publishes to Google Calendar. Auto-resolves holidays &amp; conflicts.</p>
+          <div class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 text-slate-600 text-lg">→</div>
+        </div>
+        <!-- Step 5 -->
+        <div class="scroll-fade bg-slate-900 rounded-2xl p-5 border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-rose-900 text-rose-300 flex items-center justify-center text-xl mb-3">📧</div>
+          <div class="text-xs font-bold text-rose-400 mb-1">FRIDAY 10AM</div>
+          <h3 class="font-bold text-white mb-2">Email Follow-up</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Sends personalised follow-ups. Offers 1-2-1 session bookings via Gmail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section id="subscribe" class="py-20 px-6">
+    <div class="max-w-2xl mx-auto text-center scroll-fade">
+      <div class="animated-border p-[2px] rounded-2xl">
+        <div class="bg-slate-900 rounded-2xl p-10">
+          <div class="text-4xl mb-4">📬</div>
+          <h2 class="text-3xl font-bold text-white mb-3">Get Weekly Insights</h2>
+          <p class="text-slate-400 mb-8">
+            Join professionals receiving Edge8's weekly digest on Malaysian Taxation, Audit &amp; Accounting — delivered every Wednesday at 10am.
+          </p>
+
+          <form id="subscribe-form" class="space-y-4" onsubmit="handleSubscribe(event)">
+            <input type="text" name="name" placeholder="Your Name" required
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors"/>
+            <input type="email" name="email" placeholder="your@email.com" required
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors"/>
+            
+            <div class="grid grid-cols-3 gap-3 text-left">
+              <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-blue-500 transition-colors">
+                <input type="checkbox" name="services" value="taxation" class="accent-blue-500"/>
+                <span class="text-sm text-blue-300">📊 Tax</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-purple-500 transition-colors">
+                <input type="checkbox" name="services" value="audit" class="accent-purple-500"/>
+                <span class="text-sm text-purple-300">🔍 Audit</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-emerald-500 transition-colors">
+                <input type="checkbox" name="services" value="account" class="accent-emerald-500"/>
+                <span class="text-sm text-emerald-300">💰 Account</span>
+              </label>
+            </div>
+
+            <button type="submit" class="subscribe-btn w-full py-4 rounded-xl text-white font-bold text-lg">
+              Subscribe — It's Free
+            </button>
+          </form>
+
+          <p id="subscribe-success" class="hidden mt-4 text-emerald-400 font-semibold">
+            ✓ You're subscribed! Check your inbox for a confirmation email.
+          </p>
+          <p class="mt-4 text-xs text-slate-600">No spam. Unsubscribe anytime. Weekly digest every Wednesday 10am MYT.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-10 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center text-xs font-black text-white">E8</div>
+        <span class="text-slate-400 text-sm">Edge8 © 2025 — Automated Marketing Campaign</span>
+      </div>
+      <div class="flex items-center gap-6 text-sm text-slate-500">
+        <a href="tax-landing.html" class="hover:text-blue-400 transition-colors">Taxation</a>
+        <a href="audit-landing.html" class="hover:text-purple-400 transition-colors">Audit</a>
+        <a href="account-landing.html" class="hover:text-emerald-400 transition-colors">Account</a>
+        <a href="mailto:tommy.dan@edge8.com" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <p class="text-slate-600 text-xs">Powered by Claude Cowork · 5-Agent AI Pipeline</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const form = document.getElementById('subscribe-form');
+      const success = document.getElementById('subscribe-success');
+      form.classList.add('opacity-50', 'pointer-events-none');
+      setTimeout(() => {
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }, 800);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

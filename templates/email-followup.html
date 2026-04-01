@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edge8 Weekly Follow-up</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: #F1F5F9; font-family: Arial, sans-serif; color: #1E293B; }
+    .wrapper { max-width: 600px; margin: 32px auto; background: #0F172A; border-radius: 16px; overflow: hidden; }
+    .header { padding: 36px 40px 28px; border-bottom: 1px solid #1E293B; }
+    .header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-box { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 12px; }
+    .logo-text { color: white; font-weight: 800; font-size: 16px; }
+    .service-pill { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid; }
+    .header-headline { color: #F1F5F9; font-size: 22px; font-weight: 800; line-height: 1.3; margin-bottom: 8px; }
+    .header-meta { color: #64748B; font-size: 13px; }
+    /* Service-specific colours — Agent 05 sets the svc-* class on wrapper elements */
+    .hero-band-tax     { background: linear-gradient(135deg, #1E3A8A, #1D4ED8); }
+    .hero-band-audit   { background: linear-gradient(135deg, #3B0764, #6D28D9); }
+    .hero-band-account { background: linear-gradient(135deg, #064E3B, #047857); }
+    /* Logo box colours */
+    .svc-tax    { background: #1D4ED8; }
+    .svc-audit  { background: #6D28D9; }
+    .svc-account{ background: #047857; }
+    /* Service pill colours */
+    .pill-tax    { background: #1E3A8A; color: #93C5FD; border-color: #1D4ED8; }
+    .pill-audit  { background: #3B0764; color: #C4B5FD; border-color: #6D28D9; }
+    .pill-account{ background: #064E3B; color: #6EE7B7; border-color: #047857; }
+    /* Takeaway number colours */
+    .num-tax    { background: #1D4ED8; }
+    .num-audit  { background: #6D28D9; }
+    .num-account{ background: #047857; }
+    /* CTA button colours */
+    .cta-tax    { background: linear-gradient(135deg, #1D4ED8, #3B82F6); }
+    .cta-audit  { background: linear-gradient(135deg, #5B21B6, #8B5CF6); }
+    .cta-account{ background: linear-gradient(135deg, #047857, #10B981); }
+    .hero-band { padding: 32px 40px; }
+    .hero-band .eyebrow { color: rgba(255,255,255,0.6); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+    .hero-band h2 { color: white; font-size: 24px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; }
+    .hero-band p { color: rgba(255,255,255,0.75); font-size: 14px; line-height: 1.6; }
+    .body { padding: 32px 40px; }
+    .greeting { color: #F1F5F9; font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+    .intro { color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 24px; }
+    .section-title { color: #64748B; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .takeaway { display: flex; gap: 14px; margin-bottom: 16px; }
+    .takeaway-num { width: 28px; height: 28px; border-radius: 7px; font-size: 12px; font-weight: 800; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .takeaway-content p { color: #F1F5F9; font-size: 14px; font-weight: 600; margin-bottom: 3px; }
+    .takeaway-content span { color: #64748B; font-size: 13px; line-height: 1.5; }
+    .divider { height: 1px; background: #1E293B; margin: 24px 0; }
+    .cta-block { text-align: center; padding: 28px 20px; }
+    .cta-block p { color: #94A3B8; font-size: 14px; margin-bottom: 18px; }
+    .cta-primary { display: inline-block; padding: 14px 32px; border-radius: 10px; color: white; font-weight: 700; font-size: 15px; text-decoration: none; margin-bottom: 10px; }
+    .cta-secondary { display: inline-block; padding: 10px 24px; border-radius: 8px; background: #1E293B; color: #94A3B8; font-weight: 600; font-size: 13px; text-decoration: none; border: 1px solid #334155; }
+    .session-box { background: #1E293B; border-radius: 12px; padding: 20px 24px; margin-top: 24px; display: flex; gap: 16px; align-items: center; }
+    .session-icon { font-size: 28px; flex-shrink: 0; }
+    .session-box h4 { color: #F1F5F9; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .session-box p { color: #64748B; font-size: 13px; line-height: 1.5; }
+    .session-box a { color: #3B82F6; font-size: 13px; font-weight: 600; text-decoration: none; }
+    .footer { padding: 20px 40px; text-align: center; border-top: 1px solid #1E293B; }
+    .footer p { color: #334155; font-size: 11px; line-height: 1.7; }
+    .footer a { color: #475569; text-decoration: none; }
+    .footer a:hover { color: #94A3B8; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <div class="logo">
+        <!-- Agent 05 sets svc-* class: svc-tax | svc-audit | svc-account -->
+        <div class="logo-box svc-{{SERVICE_KEY}}">E8</div>
+        <span class="logo-text">Edge8</span>
+      </div>
+      <!-- Agent 05 sets pill-* class: pill-tax | pill-audit | pill-account -->
+      <span class="service-pill pill-{{SERVICE_KEY}}">
+        {{SERVICE_EMOJI}} {{SERVICE_LABEL}}
+      </span>
+    </div>
+    <h1 class="header-headline">{{EMAIL_SUBJECT_LINE}}</h1>
+    <p class="header-meta">Published {{PUBLISH_DATE}} · Follow-up sent {{FOLLOWUP_DATE}}</p>
+  </div>
+
+  <!-- Hero Band (colour swapped by Agent 05) -->
+  <div class="hero-band hero-band-{{SERVICE_KEY}}">
+    <p class="eyebrow">{{SERVICE_LABEL}} UPDATE · {{SOURCE_NAME}}</p>
+    <h2>{{HEADLINE}}</h2>
+    <p>{{SUMMARY_SHORT}}</p>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+    <p class="greeting">Hi {{FIRST_NAME}},</p>
+    <p class="intro">
+      Earlier this week we published our {{SERVICE_LABEL}} update on <strong style="color:#F1F5F9">{{HEADLINE}}</strong>. 
+      In case you missed it — or want a quick refresher — here are the three things that matter most for your business.
+    </p>
+
+    <!-- Key Takeaways -->
+    <p class="section-title">3 Things That Matter for Your Business</p>
+
+    <div class="takeaway">
+      <!-- Agent 05 sets num-* class: num-tax | num-audit | num-account -->
+      <div class="takeaway-num num-{{SERVICE_KEY}}">1</div>
+      <div class="takeaway-content">
+        <p>{{TAKEAWAY_1_TITLE}}</p>
+        <span>{{TAKEAWAY_1_BODY}}</span>
+      </div>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-num num-{{SERVICE_KEY}}">2</div>
+      <div class="takeaway-content">
+        <p>{{TAKEAWAY_2_TITLE}}</p>
+        <span>{{TAKEAWAY_2_BODY}}</span>
+      </div>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-num num-{{SERVICE_KEY}}">3</div>
+      <div class="takeaway-content">
+        <p>{{TAKEAWAY_3_TITLE}}</p>
+        <span>{{TAKEAWAY_3_BODY}}</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Primary CTA -->
+    <div class="cta-block">
+      <p>Read the full article with source references and compliance checklist:</p>
+      <!-- Agent 05 sets cta-* class: cta-tax | cta-audit | cta-account -->
+      <a href="{{LANDING_URL}}" class="cta-primary cta-{{SERVICE_KEY}}">
+        Read Full Update →
+      </a><br/>
+      <a href="{{LANDING_URL}}#subscribe" class="cta-secondary">Share with a colleague</a>
+    </div>
+
+    <!-- 1-2-1 Session Box -->
+    <div class="session-box">
+      <div class="session-icon">🗓️</div>
+      <div>
+        <h4>Want personalised advice?</h4>
+        <p>Book a free 30-minute 1-2-1 session with an Edge8 {{SERVICE_LABEL}} specialist. We'll walk through exactly how this update affects your business.</p>
+        <a href="{{BOOKING_URL}}">Book a 1-2-1 Session → Free, 30 min via Google Meet</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      You're receiving this because you subscribed to Edge8 {{SERVICE_LABEL}} updates.<br/>
+      <a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a> · 
+      <a href="https://edge8.com/preferences">Manage Preferences</a> · 
+      <a href="https://edge8.com/privacy">Privacy Policy</a><br/>
+      Edge8 · Kuala Lumpur, Malaysia · <a href="mailto:hello@edge8.com">hello@edge8.com</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

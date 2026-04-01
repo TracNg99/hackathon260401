@@ -1,0 +1,402 @@
+<svg viewBox="0 0 1600 860" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5B21B6" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#6D28D9" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92400E" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#B45309" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#991B1B" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#B91C1C" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-blue">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <marker id="arr-gold" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F59E0B"/>
+    </marker>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#1E293B"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="860" fill="url(#bg)"/>
+  <rect width="1600" height="860" fill="url(#dots)" opacity="0.6"/>
+
+  <!-- Header Band -->
+  <rect x="0" y="0" width="1600" height="118" fill="url(#header-grad)"/>
+  <rect x="0" y="116" width="1600" height="2" fill="#3B82F6" opacity="0.4"/>
+
+  <!-- Logo box -->
+  <rect x="32" y="22" width="64" height="64" rx="14" fill="#1D4ED8" filter="url(#shadow)"/>
+  <rect x="32" y="22" width="64" height="64" rx="14" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="64" y="66" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="white" text-anchor="middle">E8</text>
+
+  <!-- Title -->
+  <text x="116" y="56" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#F1F5F9" letter-spacing="1">EDGE8  AUTOMATED MARKETING WORKFLOW</text>
+  <text x="116" y="84" font-family="Arial, sans-serif" font-size="13" fill="#64748B" letter-spacing="0.5">Multi-Agent AI System  •  News Research  →  Graphic Design  →  Landing Page  →  Scheduling  →  Email</text>
+
+  <!-- Weekly badge -->
+  <rect x="1356" y="28" width="210" height="58" rx="14" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="1461" y="52" font-family="Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" letter-spacing="1">WEEKLY CAMPAIGN</text>
+  <text x="1461" y="72" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3B82F6" text-anchor="middle">TUE → WED → FRI</text>
+
+  <!-- ═══ FLOW SECTION LABEL ═══ -->
+  <text x="800" y="148" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle" letter-spacing="2">5-AGENT PIPELINE</text>
+
+  <!-- ══════════════════════════════════════════
+       CARD 1 — NEWS RESEARCHER
+       x=32, y=158, w=264, h=504
+  ══════════════════════════════════════════ -->
+  <rect x="32" y="158" width="264" height="504" rx="16" fill="url(#g1)" filter="url(#shadow)"/>
+  <rect x="32" y="158" width="264" height="504" rx="16" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.5"/>
+  <!-- Top accent bar -->
+  <rect x="32" y="158" width="264" height="7" rx="4" fill="#3B82F6"/>
+
+  <!-- Badge circle -->
+  <circle cx="72" cy="206" r="24" fill="#1E3A8A" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="72" y="212" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#93C5FD" text-anchor="middle">01</text>
+
+  <!-- Icon -->
+  <text x="220" y="218" font-family="Arial, sans-serif" font-size="40" text-anchor="middle">📰</text>
+
+  <!-- Name -->
+  <text x="164" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="0.5">NEWS RESEARCHER</text>
+
+  <!-- Schedule pill -->
+  <rect x="72" y="262" width="184" height="24" rx="12" fill="#1E3A8A"/>
+  <text x="164" y="278" font-family="Arial, sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle">⏰ Every Tuesday</text>
+
+  <!-- Divider -->
+  <line x1="52" y1="298" x2="276" y2="298" stroke="#3B82F6" stroke-width="0.5" opacity="0.35"/>
+
+  <!-- Bullets -->
+  <circle cx="62" cy="316" r="3" fill="#3B82F6"/>
+  <text x="74" y="320" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Scrapes SSM  (Taxation)</text>
+  <circle cx="62" cy="338" r="3" fill="#3B82F6"/>
+  <text x="74" y="342" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Scrapes Natl Audit Dept MY</text>
+  <circle cx="62" cy="360" r="3" fill="#3B82F6"/>
+  <text x="74" y="364" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Scrapes ACCA Malaysia</text>
+  <circle cx="62" cy="382" r="3" fill="#3B82F6"/>
+  <text x="74" y="386" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Summarises top story × 3</text>
+  <circle cx="62" cy="404" r="3" fill="#3B82F6"/>
+  <text x="74" y="408" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Emails brief to Tommy</text>
+
+  <!-- Output box -->
+  <rect x="52" y="422" width="224" height="46" rx="8" fill="#0F172A" opacity="0.7"/>
+  <text x="164" y="441" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+  <text x="164" y="458" font-family="Arial, sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle">3× News Briefs (JSON)</text>
+
+  <!-- MCP divider -->
+  <line x1="52" y1="480" x2="276" y2="480" stroke="#3B82F6" stroke-width="0.5" opacity="0.3"/>
+  <text x="52" y="496" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">MCPs</text>
+  <rect x="52" y="502" width="66" height="19" rx="9" fill="#1E3A8A"/>
+  <text x="85" y="515" font-family="Arial, sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">exa-search</text>
+  <rect x="126" y="502" width="46" height="19" rx="9" fill="#1E3A8A"/>
+  <text x="149" y="515" font-family="Arial, sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">fetch</text>
+
+  <text x="52" y="536" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">SKILLS</text>
+  <rect x="52" y="542" width="88" height="19" rx="9" fill="#1E3A8A"/>
+  <text x="96" y="555" font-family="Arial, sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">deep-research</text>
+  <rect x="148" y="542" width="82" height="19" rx="9" fill="#1E3A8A"/>
+  <text x="189" y="555" font-family="Arial, sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">web-scraping</text>
+
+  <text x="52" y="576" font-family="Arial, sans-serif" font-size="9" fill="#475569">ssm.com.my  ·  audit.gov.my  ·  accaglobal.com/my</text>
+
+  <!-- Arrow 1 → 2 -->
+  <path d="M 296 410 C 316 410 316 410 326 410" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <text x="311" y="402" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">topic</text>
+
+
+  <!-- ══════════════════════════════════════════
+       CARD 2 — GRAPHIC DESIGNER
+       x=330, y=158, w=264, h=504
+  ══════════════════════════════════════════ -->
+  <rect x="330" y="158" width="264" height="504" rx="16" fill="url(#g2)" filter="url(#shadow)"/>
+  <rect x="330" y="158" width="264" height="504" rx="16" fill="none" stroke="#8B5CF6" stroke-width="1.5" opacity="0.5"/>
+  <rect x="330" y="158" width="264" height="7" rx="4" fill="#8B5CF6"/>
+
+  <circle cx="370" cy="206" r="24" fill="#3B0764" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="370" y="212" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#C4B5FD" text-anchor="middle">02</text>
+  <text x="516" y="218" font-family="Arial, sans-serif" font-size="40" text-anchor="middle">🎨</text>
+  <text x="462" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="0.5">GRAPHIC DESIGNER</text>
+
+  <rect x="370" y="262" width="184" height="24" rx="12" fill="#3B0764"/>
+  <text x="462" y="278" font-family="Arial, sans-serif" font-size="11" fill="#C4B5FD" text-anchor="middle">⏰ Tuesday (Automated)</text>
+
+  <line x1="350" y1="298" x2="574" y2="298" stroke="#8B5CF6" stroke-width="0.5" opacity="0.35"/>
+
+  <circle cx="360" cy="316" r="3" fill="#8B5CF6"/>
+  <text x="372" y="320" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Receives topic from Agent 01</text>
+  <circle cx="360" cy="338" r="3" fill="#8B5CF6"/>
+  <text x="372" y="342" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Applies Edge8 style guide</text>
+  <circle cx="360" cy="360" r="3" fill="#8B5CF6"/>
+  <text x="372" y="364" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Generates 3× service graphics</text>
+  <circle cx="360" cy="382" r="3" fill="#8B5CF6"/>
+  <text x="372" y="386" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Produces design spec (JSON)</text>
+  <circle cx="360" cy="404" r="3" fill="#8B5CF6"/>
+  <text x="372" y="408" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Emails Tommy for approval</text>
+
+  <rect x="350" y="422" width="224" height="46" rx="8" fill="#0F172A" opacity="0.7"/>
+  <text x="462" y="441" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+  <text x="462" y="458" font-family="Arial, sans-serif" font-size="11" fill="#C4B5FD" text-anchor="middle">3× Design Specs + Canva URLs</text>
+
+  <line x1="350" y1="480" x2="574" y2="480" stroke="#8B5CF6" stroke-width="0.5" opacity="0.3"/>
+  <text x="350" y="496" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">MCPs</text>
+  <rect x="350" y="502" width="52" height="19" rx="9" fill="#3B0764"/>
+  <text x="376" y="515" font-family="Arial, sans-serif" font-size="9" fill="#C4B5FD" text-anchor="middle">canva</text>
+  <rect x="410" y="502" width="48" height="19" rx="9" fill="#3B0764"/>
+  <text x="434" y="515" font-family="Arial, sans-serif" font-size="9" fill="#C4B5FD" text-anchor="middle">gmail</text>
+
+  <text x="350" y="536" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">SKILLS</text>
+  <rect x="350" y="542" width="82" height="19" rx="9" fill="#3B0764"/>
+  <text x="391" y="555" font-family="Arial, sans-serif" font-size="9" fill="#C4B5FD" text-anchor="middle">web-design</text>
+  <rect x="440" y="542" width="90" height="19" rx="9" fill="#3B0764"/>
+  <text x="485" y="555" font-family="Arial, sans-serif" font-size="9" fill="#C4B5FD" text-anchor="middle">brainstorming</text>
+
+
+  <!-- APPROVAL GATE 1 (between 2 and 3) -->
+  <path d="M 594 410 L 624 410" stroke="#475569" stroke-width="1.5" fill="none"/>
+  <polygon points="638,394 656,410 638,426 620,410" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+  <text x="638" y="415" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">✓</text>
+  <path d="M 656 410 L 686 410" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <text x="638" y="440" font-family="Arial, sans-serif" font-size="8.5" fill="#F59E0B" text-anchor="middle">TOMMY</text>
+  <text x="638" y="452" font-family="Arial, sans-serif" font-size="8" fill="#64748B" text-anchor="middle">Approve</text>
+
+
+  <!-- ══════════════════════════════════════════
+       CARD 3 — WEB DESIGNER
+       x=690, y=158, w=264, h=504
+  ══════════════════════════════════════════ -->
+  <rect x="690" y="158" width="264" height="504" rx="16" fill="url(#g3)" filter="url(#shadow)"/>
+  <rect x="690" y="158" width="264" height="504" rx="16" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.5"/>
+  <rect x="690" y="158" width="264" height="7" rx="4" fill="#10B981"/>
+
+  <circle cx="730" cy="206" r="24" fill="#064E3B" stroke="#10B981" stroke-width="1.5"/>
+  <text x="730" y="212" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#6EE7B7" text-anchor="middle">03</text>
+  <text x="876" y="218" font-family="Arial, sans-serif" font-size="40" text-anchor="middle">💻</text>
+  <text x="822" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="0.5">WEB DESIGNER</text>
+
+  <rect x="730" y="262" width="184" height="24" rx="12" fill="#064E3B"/>
+  <text x="822" y="278" font-family="Arial, sans-serif" font-size="11" fill="#6EE7B7" text-anchor="middle">⏰ Tuesday (Automated)</text>
+
+  <line x1="710" y1="298" x2="934" y2="298" stroke="#10B981" stroke-width="0.5" opacity="0.35"/>
+
+  <circle cx="720" cy="316" r="3" fill="#10B981"/>
+  <text x="732" y="320" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Receives graphic + design spec</text>
+  <circle cx="720" cy="338" r="3" fill="#10B981"/>
+  <text x="732" y="342" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Builds 3× HTML landing pages</text>
+  <circle cx="720" cy="360" r="3" fill="#10B981"/>
+  <text x="732" y="364" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Style-consistent with graphic</text>
+  <circle cx="720" cy="382" r="3" fill="#10B981"/>
+  <text x="732" y="386" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Embed subscribe form</text>
+  <circle cx="720" cy="404" r="3" fill="#10B981"/>
+  <text x="732" y="408" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Emails Tommy for approval</text>
+
+  <rect x="710" y="422" width="224" height="46" rx="8" fill="#0F172A" opacity="0.7"/>
+  <text x="822" y="441" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+  <text x="822" y="458" font-family="Arial, sans-serif" font-size="11" fill="#6EE7B7" text-anchor="middle">3× HTML Pages + Subscribe Form</text>
+
+  <line x1="710" y1="480" x2="934" y2="480" stroke="#10B981" stroke-width="0.5" opacity="0.3"/>
+  <text x="710" y="496" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">MCPs</text>
+  <rect x="710" y="502" width="38" height="19" rx="9" fill="#064E3B"/>
+  <text x="729" y="515" font-family="Arial, sans-serif" font-size="9" fill="#6EE7B7" text-anchor="middle">git</text>
+  <rect x="756" y="502" width="48" height="19" rx="9" fill="#064E3B"/>
+  <text x="780" y="515" font-family="Arial, sans-serif" font-size="9" fill="#6EE7B7" text-anchor="middle">gmail</text>
+
+  <text x="710" y="536" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">SKILLS</text>
+  <rect x="710" y="542" width="82" height="19" rx="9" fill="#064E3B"/>
+  <text x="751" y="555" font-family="Arial, sans-serif" font-size="9" fill="#6EE7B7" text-anchor="middle">react-nextjs</text>
+  <rect x="800" y="542" width="76" height="19" rx="9" fill="#064E3B"/>
+  <text x="838" y="555" font-family="Arial, sans-serif" font-size="9" fill="#6EE7B7" text-anchor="middle">web-design</text>
+
+
+  <!-- APPROVAL GATE 2 (between 3 and 4) -->
+  <path d="M 954 410 L 984 410" stroke="#475569" stroke-width="1.5" fill="none"/>
+  <polygon points="998,394 1016,410 998,426 980,410" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+  <text x="998" y="415" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">✓</text>
+  <path d="M 1016 410 L 1046 410" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <text x="998" y="440" font-family="Arial, sans-serif" font-size="8.5" fill="#F59E0B" text-anchor="middle">TOMMY</text>
+  <text x="998" y="452" font-family="Arial, sans-serif" font-size="8" fill="#64748B" text-anchor="middle">Approve</text>
+
+
+  <!-- ══════════════════════════════════════════
+       CARD 4 — SCHEDULER
+       x=1050, y=158, w=232, h=504
+  ══════════════════════════════════════════ -->
+  <rect x="1050" y="158" width="232" height="504" rx="16" fill="url(#g4)" filter="url(#shadow)"/>
+  <rect x="1050" y="158" width="232" height="504" rx="16" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.5"/>
+  <rect x="1050" y="158" width="232" height="7" rx="4" fill="#F59E0B"/>
+
+  <circle cx="1090" cy="206" r="24" fill="#451A03" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="1090" y="212" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#FCD34D" text-anchor="middle">04</text>
+  <text x="1220" y="218" font-family="Arial, sans-serif" font-size="40" text-anchor="middle">📅</text>
+  <text x="1166" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="0.5">SCHEDULER</text>
+
+  <rect x="1076" y="262" width="184" height="24" rx="12" fill="#451A03"/>
+  <text x="1168" y="278" font-family="Arial, sans-serif" font-size="11" fill="#FCD34D" text-anchor="middle">⏰ Wednesday 10am</text>
+
+  <line x1="1068" y1="298" x2="1270" y2="298" stroke="#F59E0B" stroke-width="0.5" opacity="0.35"/>
+
+  <circle cx="1078" cy="316" r="3" fill="#F59E0B"/>
+  <text x="1090" y="320" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Publishes to Google Calendar</text>
+  <circle cx="1078" cy="338" r="3" fill="#F59E0B"/>
+  <text x="1090" y="342" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Auto-resolves conflicts</text>
+  <circle cx="1078" cy="360" r="3" fill="#F59E0B"/>
+  <text x="1090" y="364" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Avoids public holidays MY</text>
+  <circle cx="1078" cy="382" r="3" fill="#F59E0B"/>
+  <text x="1090" y="386" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Sends confirmation email</text>
+  <circle cx="1078" cy="404" r="3" fill="#F59E0B"/>
+  <text x="1090" y="408" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Manages subscriber list</text>
+
+  <rect x="1068" y="422" width="194" height="46" rx="8" fill="#0F172A" opacity="0.7"/>
+  <text x="1165" y="441" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+  <text x="1165" y="458" font-family="Arial, sans-serif" font-size="11" fill="#FCD34D" text-anchor="middle">GCal Event + Confirm Email</text>
+
+  <line x1="1068" y1="480" x2="1270" y2="480" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+  <text x="1068" y="496" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">MCPs</text>
+  <rect x="1068" y="502" width="82" height="19" rx="9" fill="#451A03"/>
+  <text x="1109" y="515" font-family="Arial, sans-serif" font-size="9" fill="#FCD34D" text-anchor="middle">google-calendar</text>
+  <rect x="1158" y="502" width="48" height="19" rx="9" fill="#451A03"/>
+  <text x="1182" y="515" font-family="Arial, sans-serif" font-size="9" fill="#FCD34D" text-anchor="middle">gmail</text>
+
+  <text x="1068" y="536" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">SKILLS</text>
+  <rect x="1068" y="542" width="98" height="19" rx="9" fill="#451A03"/>
+  <text x="1117" y="555" font-family="Arial, sans-serif" font-size="9" fill="#FCD34D" text-anchor="middle">agent-skill-creator</text>
+
+  <!-- Arrow 4 → 5 -->
+  <path d="M 1282 410 C 1302 410 1302 410 1318 410" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <text x="1300" y="402" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">subs</text>
+
+
+  <!-- ══════════════════════════════════════════
+       CARD 5 — EMAIL AGENT
+       x=1322, y=158, w=246, h=504
+  ══════════════════════════════════════════ -->
+  <rect x="1322" y="158" width="246" height="504" rx="16" fill="url(#g5)" filter="url(#shadow)"/>
+  <rect x="1322" y="158" width="246" height="504" rx="16" fill="none" stroke="#EF4444" stroke-width="1.5" opacity="0.5"/>
+  <rect x="1322" y="158" width="246" height="7" rx="4" fill="#EF4444"/>
+
+  <circle cx="1362" cy="206" r="24" fill="#450A0A" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="1362" y="212" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#FCA5A5" text-anchor="middle">05</text>
+  <text x="1500" y="218" font-family="Arial, sans-serif" font-size="40" text-anchor="middle">📧</text>
+  <text x="1445" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="0.5">EMAIL AGENT</text>
+
+  <rect x="1346" y="262" width="200" height="24" rx="12" fill="#450A0A"/>
+  <text x="1446" y="278" font-family="Arial, sans-serif" font-size="11" fill="#FCA5A5" text-anchor="middle">⏰ Every Friday 10am</text>
+
+  <line x1="1340" y1="298" x2="1556" y2="298" stroke="#EF4444" stroke-width="0.5" opacity="0.35"/>
+
+  <circle cx="1350" cy="316" r="3" fill="#EF4444"/>
+  <text x="1362" y="320" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Sends follow-up emails</text>
+  <circle cx="1350" cy="338" r="3" fill="#EF4444"/>
+  <text x="1362" y="342" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">1-2-1 session invitations</text>
+  <circle cx="1350" cy="360" r="3" fill="#EF4444"/>
+  <text x="1362" y="364" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Subscription confirmations</text>
+  <circle cx="1350" cy="382" r="3" fill="#EF4444"/>
+  <text x="1362" y="386" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Targets: Tax / Audit / Account</text>
+  <circle cx="1350" cy="404" r="3" fill="#EF4444"/>
+  <text x="1362" y="408" font-family="Arial, sans-serif" font-size="11.5" fill="#CBD5E1">Channel: Gmail</text>
+
+  <rect x="1340" y="422" width="210" height="46" rx="8" fill="#0F172A" opacity="0.7"/>
+  <text x="1445" y="441" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+  <text x="1445" y="458" font-family="Arial, sans-serif" font-size="11" fill="#FCA5A5" text-anchor="middle">Batch Gmail Follow-ups</text>
+
+  <line x1="1340" y1="480" x2="1556" y2="480" stroke="#EF4444" stroke-width="0.5" opacity="0.3"/>
+  <text x="1340" y="496" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">MCPs</text>
+  <rect x="1340" y="502" width="48" height="19" rx="9" fill="#450A0A"/>
+  <text x="1364" y="515" font-family="Arial, sans-serif" font-size="9" fill="#FCA5A5" text-anchor="middle">gmail</text>
+
+  <text x="1340" y="536" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" letter-spacing="1">SKILLS</text>
+  <rect x="1340" y="542" width="102" height="19" rx="9" fill="#450A0A"/>
+  <text x="1391" y="555" font-family="Arial, sans-serif" font-size="9" fill="#FCA5A5" text-anchor="middle">internal-comms</text>
+
+
+  <!-- ══════════════════════════════════════════
+       TIMELINE BAR
+  ══════════════════════════════════════════ -->
+  <rect x="32" y="688" width="1536" height="64" rx="14" fill="#1E293B" opacity="0.95"/>
+  <rect x="32" y="688" width="1536" height="64" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Track line -->
+  <line x1="100" y1="720" x2="1500" y2="720" stroke="#334155" stroke-width="2.5"/>
+
+  <!-- Tuesday node -->
+  <circle cx="280" cy="720" r="18" fill="#1D4ED8" filter="url(#glow-blue)"/>
+  <text x="280" y="725" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">TUE</text>
+  <line x1="164" y1="662" x2="164" y2="690" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <path d="M 164 690 Q 164 720 262 720" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <text x="280" y="752" font-family="Arial, sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle">Research + Design</text>
+
+  <!-- Dotted line TUE→WED -->
+  <line x1="298" y1="720" x2="798" y2="720" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Wednesday node -->
+  <circle cx="816" cy="720" r="18" fill="#B45309"/>
+  <text x="816" y="725" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">WED</text>
+  <line x1="1166" y1="662" x2="1166" y2="690" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <path d="M 1166 690 Q 1166 720 834 720" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <text x="816" y="752" font-family="Arial, sans-serif" font-size="10" fill="#FCD34D" text-anchor="middle">Publish + Schedule</text>
+
+  <!-- Dotted line WED→FRI -->
+  <line x1="834" y1="720" x2="1198" y2="720" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Friday node -->
+  <circle cx="1216" cy="720" r="18" fill="#B91C1C"/>
+  <text x="1216" y="725" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">FRI</text>
+  <line x1="1445" y1="662" x2="1445" y2="690" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <path d="M 1445 690 Q 1445 720 1234 720" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <text x="1216" y="752" font-family="Arial, sans-serif" font-size="10" fill="#FCA5A5" text-anchor="middle">Follow-up Emails</text>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <rect x="0" y="782" width="1600" height="78" fill="#0F172A"/>
+  <line x1="0" y1="782" x2="1600" y2="782" stroke="#1E293B" stroke-width="1.5"/>
+
+  <text x="800" y="806" font-family="Arial, sans-serif" font-size="10.5" fill="#475569" text-anchor="middle" letter-spacing="1">SERVICES COVERED</text>
+
+  <!-- Tax badge -->
+  <rect x="370" y="814" width="170" height="24" rx="12" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+  <text x="455" y="830" font-family="Arial, sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle">📊  Taxation  ·  SSM Malaysia</text>
+
+  <!-- Audit badge -->
+  <rect x="558" y="814" width="220" height="24" rx="12" fill="#1E293B" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="668" y="830" font-family="Arial, sans-serif" font-size="10" fill="#C4B5FD" text-anchor="middle">🔍  Audit  ·  Natl Audit Dept MY</text>
+
+  <!-- Account badge -->
+  <rect x="796" y="814" width="220" height="24" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1"/>
+  <text x="906" y="830" font-family="Arial, sans-serif" font-size="10" fill="#6EE7B7" text-anchor="middle">💰  Account  ·  ACCA Malaysia</text>
+
+  <!-- Approval note -->
+  <text x="800" y="852" font-family="Arial, sans-serif" font-size="9.5" fill="#334155" text-anchor="middle">Approvals → tommy.dan@edge8.com  •  Powered by Claude Cowork  •  Edge8 © 2025</text>
+</svg>
