@@ -1,79 +1,63 @@
-# Edge8 Automated Marketing Campaign
+# Project Name
 
-> 5-Agent AI workflow: News Research → Graphic Design → Landing Page → Scheduling → Email Follow-up
+Replace this with your project description.
 
-## Architecture
+## Quick Start
 
-```
-[01 News Researcher] → [02 Graphic Designer] → [03 Web Designer] → [04 Scheduler] → [05 Email Agent]
-     Every Tue              Tue (Auto)              Tue (Auto)         Wed 10am         Fri 10am
-```
+```bash
+# Install dependencies
+npm install
 
-## Services Covered
-
-| Service | News Source | Update Cadence |
-|---------|-------------|----------------|
-| **Taxation** | SSM Malaysia (`ssm.com.my`) | Weekly |
-| **Audit** | National Audit Dept Malaysia (`audit.gov.my`) | Weekly |
-| **Account** | ACCA Malaysia (`accaglobal.com/my`) | Weekly |
-
-## Workflow Agents
-
-| # | Agent | File | MCPs | Skills |
-|---|-------|------|------|--------|
-| 01 | News Researcher | `.windsurf/workflows/01-news-researcher.md` | `exa`, `fetch` | `deep-research`, `web-scraping` |
-| 02 | Graphic Designer | `.windsurf/workflows/02-graphic-designer.md` | `canva`, `gmail` | `web-design`, `brainstorming` |
-| 03 | Web Designer | `.windsurf/workflows/03-web-designer.md` | `git`, `gmail` | `react-nextjs`, `web-design` |
-| 04 | Scheduler | `.windsurf/workflows/04-scheduler.md` | `google-calendar`, `gmail` | `agent-skill-creator` |
-| 05 | Email Agent | `.windsurf/workflows/05-email-agent.md` | `gmail` | `internal-comms` |
-
-## Approval Flow
-
-```
-Agent 02 output → tommy.dan@edge8.com (graphic approval)
-Agent 03 output → tommy.dan@edge8.com (landing page approval)
-Approved → Agent 04 publishes to Google Calendar (Wednesday 10am)
-Subscribers → Agent 05 follow-up (Friday 10am)
+# Start development server (if applicable)
+npm run dev
 ```
 
 ## Project Structure
 
 ```
-Hackathon260401/
-├── README.md
-├── Problem.pdf
-├── assets/
-│   ├── infographic.svg          # Workflow illustration (central landing piece)
-│   └── style-guide.json         # Design system tokens
-├── docs/
-│   └── agent-specs.md           # Detailed agent specifications
-├── landing-pages/
-│   ├── index.html               # Main landing page (infographic as hero)
-│   ├── tax-landing.html         # Taxation service page
-│   ├── audit-landing.html       # Audit service page
-│   └── account-landing.html     # Account service page
-├── templates/
-│   ├── design-spec.json         # Graphic design specification template
-│   ├── email-confirmation.html  # Subscription confirmation email
-│   └── email-followup.html      # Friday follow-up email
-└── .windsurf/workflows/
-    ├── 01-news-researcher.md
-    ├── 02-graphic-designer.md
-    ├── 03-web-designer.md
-    ├── 04-scheduler.md
-    └── 05-email-agent.md
+project-root/
+├── .claude/              # Claude Code configuration
+│   ├── CLAUDE.md        # Project rules and guidelines
+│   ├── MEMORY.md        # Memory index for cross-session context
+│   ├── settings.json    # Claude Code harness configuration
+│   ├── launch.json      # Dev server startup configuration
+│   ├── rules/           # Shared team/project rules
+│   ├── memories/        # Persistent session memory files
+│   ├── agents/          # Agent definitions and configs
+│   ├── skills/          # Project-specific skills
+│   └── templates/       # Reusable templates
+├── src/                 # Source code
+│   ├── components/      # Reusable components
+│   ├── utils/          # Utility functions
+│   └── types/          # TypeScript types
+├── public/             # Static files (HTML, images)
+├── data/               # Data files and documentation
+├── assets/             # Design files and images
+├── tests/              # Test files
+└── docs/               # Additional documentation
 ```
 
-## Running Workflows
+## Development
 
-Each workflow is a Windsurf Cowork workflow. Run in sequence each Tuesday:
+See `.claude/CLAUDE.md` for detailed project guidelines and rules.
 
-1. `/01-news-researcher` — Fetches and summarises this week's news
-2. `/02-graphic-designer` — Generates graphics, sends to Tommy
-3. `/03-web-designer` — Builds landing pages, sends to Tommy
-4. `/04-scheduler` — On approval, schedules Wednesday slot
-5. `/05-email-agent` — Sends Friday follow-ups to subscribers
+## Memory System
 
-## Approval Email
+This project uses Claude's persistent memory system. See `.claude/MEMORY.md` for the memory index.
 
-All approval requests are routed to: **tommy.dan@edge8.com**
+## Skills
+
+Custom skills for this project are located in `.claude/skills/`. See individual skill files for details.
+
+## Configuration
+
+- **Claude Code Settings**: `.claude/settings.json`
+- **Dev Server**: `.claude/launch.json`
+- **Project Rules**: `.claude/CLAUDE.md`
+
+## Next Steps
+
+1. Update this README with your actual project details
+2. Configure `.claude/settings.json` for your workflow
+3. Update `.claude/CLAUDE.md` with project-specific guidelines
+4. Add skills in `.claude/skills/` as needed

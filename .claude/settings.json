@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "hooks": {
+    "onSave": [],
+    "beforeCommit": [],
+    "afterCommit": []
+  },
+  "memory": {
+    "enabled": true,
+    "directory": ".claude/memories"
+  },
+  "agents": {
+    "enabled": true,
+    "directory": ".claude/agents"
+  }
+}
